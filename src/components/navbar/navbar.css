@@ -18,6 +18,12 @@
 
 .navbar__container a:hover{
     border-bottom: 0.1rem solid white;
+    padding-bottom:0.5rem;
+}
+
+nav a.active{
+    border-bottom: 0.1rem solid white;
+    padding-bottom:0.5rem;
 }
 
 .navbar__container img{
@@ -31,4 +37,6 @@
   flex-grow:1;       
   text-align:center; 
 }
+
+
 
