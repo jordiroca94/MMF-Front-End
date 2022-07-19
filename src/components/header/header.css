@@ -1,0 +1,7 @@
+.header__container{
+    background-image: url(/src/assets/background2.jpg);
+    background-size:cover; 
+    background-repeat:no-repeat;
+    height:100vh;
+}
+

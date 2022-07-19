@@ -1,0 +1,24 @@
+.topbar__container{
+    background-image: url(/src/assets/laser.jpg);
+    background-size:cover; 
+    background-repeat:no-repeat;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:6.5rem;
+    font-size:3rem
+}
+
+.topbar__date{
+   
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:2rem;
+    font-size:0.8rem;
+    font-weight:700;
+    
+}
