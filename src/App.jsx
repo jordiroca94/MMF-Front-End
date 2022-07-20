@@ -1,4 +1,5 @@
 import React from 'react'
+import Concerts from './components/concerts/Concerts'
 import Header from './components/header/Header'
 import Navbar from './components/navbar/Navbar'
 import Topbar from './components/topbar/Topbar'
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar/>
       <Header/>
       <Wristband/>
+      <Concerts/>
     </div>
   )
 }
