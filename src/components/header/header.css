@@ -5,3 +5,9 @@
     height:100vh;
 }
 
+.header__title{
+    color:black;
+    display:flex;
+    justify-content:center;
+    padding-top:7rem;
+}

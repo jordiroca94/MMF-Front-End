@@ -4,7 +4,7 @@ import "./header.css"
 const Header = () => {
   return (
     <div className='header__container'>
-        
+        <h1 className='header__title'>THANKS FOR COMMING ONE MORE YEAR</h1>
     </div>
   )
 }
