@@ -1,8 +1,35 @@
+.concerts__header{
+    background-image: url(/src/assets/background3.png);
+    background-size:cover; 
+    background-repeat:no-repeat;
+    height:30vh;
+    display:flex;
+    align-items:center;
+}
 
+.concerts__header__wrapper{
+    color:white;
+    padding:2rem;
+    display:flex; 
+    flex-direction:column; 
+    gap:1rem;
+}
+
+.concerts__header a{
+    justify-content:center;
+    text-decoration: none;
+    color:white;
+    padding:0.7rem;
+    border:1px solid white;
+    width:8rem;
+}
+
+/* SLIDER */
 
 .concerts__container{
-    background:white;;
-    /* height:40vh; */
+    background:white;
+    padding:3rem;
+    background-color:black;
 }
 
 .card{
@@ -33,4 +60,12 @@
 .text__wrapper h3 {
     font-size:1rem;
     color:white;
+}
+
+.slick-dots li.slick-active button:before {
+    color:rgb(227,66,52)!important;
+   }
+
+.slick-dots li button:before{
+    color:white !important;
 }
