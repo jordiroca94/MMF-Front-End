@@ -1,0 +1,22 @@
+.sponsors__container{
+    height:60vh;
+    padding:3rem;
+}
+
+.links__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding: 5rem;
+    justify-content: center;
+}
+
+.links__container a{
+    display: block;
+    margin: auto 0;
+    width: 150px;
+}
+
+.links__container img{
+    max-width:100%;
+}
