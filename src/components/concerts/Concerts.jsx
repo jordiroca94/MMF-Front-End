@@ -54,7 +54,7 @@ const Concerts = () => {
     <div>
     <div className='concerts__header'>
     <div className='concerts__header__wrapper'>
-      <h1>CONCERTS MY MUSIC FESTIVAL </h1>
+      <h1>CONCERTS MMF </h1>
       <p>All those artists you have been waiting for </p>
       <a href="#">ALL ARTISTS</a>
 

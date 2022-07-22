@@ -1,0 +1,27 @@
+.intro__container{
+    width:100%; 
+    display:flex;
+    flex-direction:column;
+}
+
+.intro__container image{
+    height:60vh;
+}
+
+.text__container{
+    background-color:black;
+    padding:2rem;
+    color:white;
+    height:28vh;
+    display:flex;
+    align-items:center;
+}
+
+.text__container h1{
+    flex:1
+}
+
+.text__container p{
+    flex:1;
+    font-size:1.2rem;
+}

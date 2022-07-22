@@ -1,13 +1,13 @@
-import IMG1 from "../../assets/slider1.jpeg"
-import IMG2 from "../../assets/slider2.jpg"
-import IMG3 from "../../assets/slider3.png"
-import IMG4 from "../../assets/slider4.webp"
-import IMG5 from "../../assets/slider5.jpg"
-import IMG6 from "../../assets/slider6.jpg"
-import IMG7 from "../../assets/slider7.jpeg"
-import IMG8 from "../../assets/slider8.jpg"
-import IMG9 from "../../assets/slider9.jpeg"
-import IMG10 from "../../assets/slider10.avif"
+import IMG1 from "../../assets/slider/slider1.jpeg"
+import IMG2 from "../../assets/slider/slider2.jpg"
+import IMG3 from "../../assets/slider/slider3.png"
+import IMG4 from "../../assets/slider/slider4.webp"
+import IMG5 from "../../assets/slider/slider5.jpg"
+import IMG6 from "../../assets/slider/slider6.jpg"
+import IMG7 from "../../assets/slider/slider7.jpeg"
+import IMG8 from "../../assets/slider/slider8.jpg"
+import IMG9 from "../../assets/slider/slider9.jpeg"
+import IMG10 from "../../assets/slider/slider10.avif"
 
 
 
