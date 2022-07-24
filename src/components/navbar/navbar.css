@@ -10,18 +10,18 @@
     
 }
 
-.navbar__container a{
+.navbar__links__wrap a{
     color:var(--color-white);
     transition: var(--transition);
     padding: 0 20px
 }
 
-.navbar__container a:hover{
+.navbar__links__wrap a:hover{
     border-bottom: 0.1rem solid white;
     padding-bottom:0.5rem;
 }
 
-nav a.active{
+.navbar__links__wrap a.active{
     border-bottom: 0.1rem solid white;
     padding-bottom:0.5rem;
 }

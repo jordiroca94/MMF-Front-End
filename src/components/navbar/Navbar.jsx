@@ -7,7 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className='navbar__container'>
+    <a href="#">
     <img src={Logo} alt="Profile"/>
+    </a>
     <div className='navbar__links__wrap'>
         <a href='#tickets' onClick={()=> setActiveNav("#tickets")} className={activeNav === "#tickets" ? "active" : ""}>TICKETS</a>
         <a href='#camping' onClick={()=> setActiveNav("#camping")} className={activeNav === "#camping" ? "active" : ""}>CAMPING</a>
