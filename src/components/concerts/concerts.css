@@ -74,3 +74,7 @@
 .slick-prev:before, .slick-next:before{
     font-size:28px !important;
 }
+
+.slick-prev{
+    left: -35px !important;
+}
