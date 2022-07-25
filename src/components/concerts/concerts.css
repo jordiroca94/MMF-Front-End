@@ -78,3 +78,16 @@
 .slick-prev{
     left: -35px !important;
 }
+
+
+@media screen and ( max-width:1250px){
+    .text__wrapper{
+       margin-top:-35%;
+    }
+}
+
+@media screen and ( max-width:650px){
+    .text__wrapper{
+        margin-top:-30%;
+    }
+}

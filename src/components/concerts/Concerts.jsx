@@ -35,16 +35,25 @@ const Concerts = () => {
       {
         breakpoint: 850,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 2
         }
       },
       {
-        breakpoint: 650,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 415,
+        settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false
         }
       }
     ]

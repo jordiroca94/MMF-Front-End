@@ -12,7 +12,6 @@
     background-color:black;
     padding:2rem;
     color:white;
-    height:28vh;
     display:flex;
     align-items:center;
 }
@@ -25,3 +24,17 @@
     flex:1;
     font-size:1.2rem;
 }
+
+@media screen and ( max-width:1024px){
+    .text__container{
+        flex-direction:column;
+    }
+}
+
+@media screen and ( max-width:600px){
+    .text__container p{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+
