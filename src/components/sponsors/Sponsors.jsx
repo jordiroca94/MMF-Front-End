@@ -20,7 +20,7 @@ import IMG14 from "../../assets/sponsors/sponsor14.png"
 const Sponsors = () => {
   return (
     <div className='sponsors__container'>
-        <h1>Sponsors</h1>
+        <h1 className='text-3xl font-bold'>Sponsors</h1>
         <div className='links__container'>
             <a href="https://www.vueling.com/es" target="_blank" rel="noreferrer"><img src={IMG1} alt="vueling"/></a>
             <a href="https://www.estrelladamm.com/" target="_blank" rel="noreferrer"><img src={IMG2} alt="estrella-damm"/></a>

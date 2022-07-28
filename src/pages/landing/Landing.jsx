@@ -13,7 +13,6 @@ const Landing = () => {
   return (
     <>
       <Topbar/>
-      <Navbar/>
       <Header/>
       <Wristband/>
       <Concerts/>

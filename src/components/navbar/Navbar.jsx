@@ -13,11 +13,11 @@ const Navbar = () => {
 
   return (
     <header>
-      <a href="#">
+      <a href="/">
         <img src={Logo} alt="Profile"/>
       </a>
     <nav ref={navRef}>
-        <a href='#tickets' onClick={()=> setActiveNav("#tickets")} className={activeNav === "#tickets" ? "active" : ""}>TICKETS</a>
+        <a href='/tickets' onClick={()=> setActiveNav("#tickets")} className={activeNav === "#tickets" ? "active" : ""}>TICKETS</a>
         <a href='#camping' onClick={()=> setActiveNav("#camping")} className={activeNav === "#camping" ? "active" : ""}>CAMPING</a>
         <a href='#experience' onClick={()=> setActiveNav("#experience")} className={activeNav === "#experience" ? "active" : ""}>EXPERIENCE</a>
         <a href='#lineup' onClick={()=> setActiveNav("#lineup")} className={activeNav === "#lineup" ? "active" : ""}>LINEUP </a>
