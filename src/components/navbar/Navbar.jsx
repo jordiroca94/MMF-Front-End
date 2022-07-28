@@ -20,7 +20,7 @@ const Navbar = () => {
         <a href='#tickets' onClick={()=> setActiveNav("#tickets")} className={activeNav === "#tickets" ? "active" : ""}>TICKETS</a>
         <a href='#camping' onClick={()=> setActiveNav("#camping")} className={activeNav === "#camping" ? "active" : ""}>CAMPING</a>
         <a href='#experience' onClick={()=> setActiveNav("#experience")} className={activeNav === "#experience" ? "active" : ""}>EXPERIENCE</a>
-        <a href='#lineup' onClick={()=> setActiveNav("#lineup")} className={activeNav === "#lineup" ? "active" : ""}>LINE UP </a>
+        <a href='#lineup' onClick={()=> setActiveNav("#lineup")} className={activeNav === "#lineup" ? "active" : ""}>LINEUP </a>
         <a href='#usefulinfo' onClick={()=> setActiveNav("#usefulinfo")} className={activeNav === "#usefulinfo" ? "active" : ""}>USEFUL INFO</a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes/>

@@ -7,6 +7,7 @@ import Navbar from './components/navbar/Navbar'
 import Sponsors from './components/sponsors/Sponsors'
 import Topbar from './components/topbar/Topbar'
 import Wristband from './components/wristband/Wristband'
+import Tickets from './pages/tickets/Tickets'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Intro/>
       <Sponsors/>
       <Footer/>
+      <Tickets/>
     </div>
   )
 }
