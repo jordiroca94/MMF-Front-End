@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react'
+import React, {useRef } from 'react'
 import "./navbar.css"
 import Logo from "../../assets/logo.jpg"
 import {FaBars,FaTimes} from "react-icons/fa";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-    const [activeNav,setActiveNav] = useState("#")
+    const location = useLocation();
+    const activeTab = location.pathname.split("/")[1]
     const navRef = useRef();
 
     const showNavbar = ()=>{
@@ -17,11 +19,11 @@ const Navbar = () => {
         <img src={Logo} alt="Profile"/>
       </a>
     <nav ref={navRef}>
-        <a href='/tickets' onClick={()=> setActiveNav("#tickets")} className={activeNav === "#tickets" ? "active" : ""}>TICKETS</a>
-        <a href='#camping' onClick={()=> setActiveNav("#camping")} className={activeNav === "#camping" ? "active" : ""}>CAMPING</a>
-        <a href='#experience' onClick={()=> setActiveNav("#experience")} className={activeNav === "#experience" ? "active" : ""}>EXPERIENCE</a>
-        <a href='#lineup' onClick={()=> setActiveNav("#lineup")} className={activeNav === "#lineup" ? "active" : ""}>LINEUP </a>
-        <a href='#usefulinfo' onClick={()=> setActiveNav("#usefulinfo")} className={activeNav === "#usefulinfo" ? "active" : ""}>USEFUL INFO</a>
+        <a href='/tickets' className={activeTab === "tickets" ? "active" : ""}>TICKETS</a>
+        <a href='/camping' className={activeTab === "camping" ? "active" : ""}>CAMPING</a>
+        <a href='/experience' className={activeTab === "experience" ? "active" : ""}>EXPERIENCE</a>
+        <a href='/lineup' className={activeTab === "lineup" ? "active" : ""}>LINEUP </a>
+        <a href='/usefulinfo' className={activeTab === "usefulinfo" ? "active" : ""}>USEFUL INFO</a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes/>
         </button>

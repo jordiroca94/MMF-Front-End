@@ -42,6 +42,12 @@
     font-size:2rem;
 }
 
+.scroll__up__wrapper a:hover {
+    background: transparent; 
+    color:red;
+    border:1px solid red;
+}
+
 .scroll__up__wrapper{
     display:flex;
     justify-content:center;
