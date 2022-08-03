@@ -5,7 +5,7 @@ const Tickets = () => {
   return (
     <div className="tickets__container flex items-center flex-col">
 
-    <div className='flex flex-row gap-14 p-10'>
+    <div className='resp__tickets flex flex-row gap-14 p-10'>
       <div className="w-60 max-w-xs rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2 text-white">ONE DAY TICKET</div>
@@ -18,7 +18,7 @@ const Tickets = () => {
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
         </div>
       </div>
-      <div className="max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
+      <div className="resp__text__card max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2 text-white">ONE DAY TICKET PREMIUM</div>
             <p className="text-white text-base mb-2">
@@ -32,7 +32,7 @@ const Tickets = () => {
       </div>
     </div>
 
-    <div className='flex flex-row gap-14 p-10'>
+    <div className='resp__tickets flex flex-row gap-14 p-10'>
       <div className="w-60 max-w-xs rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2 text-white">FULL TICKET</div>
@@ -45,7 +45,7 @@ const Tickets = () => {
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
         </div>
       </div>
-      <div className="max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
+      <div className="resp__text__card max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2 text-white">FULL TICKET PREMIUM</div>
             <p className="text-white text-base mb-2">
@@ -60,7 +60,7 @@ const Tickets = () => {
     </div>
 
     <div className='flex flex-row gap-14 p-10'>
-    <div className="max-w-lg rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
+    <div className="resp__text__card max-w-lg rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl mb-2 text-white">CHARGE YOUR CASHLESS WRISTBAND</div>
             <p className="text-white text-base mb-2">
