@@ -1,9 +1,12 @@
 import React from 'react'
+import NavbarCamping from '../../components/navbar-camping/NavbarCamping'
 import "./camping.css"
 
 const Camping = () => {
   return (
-    <div>Camping</div>
+    <>     
+      <NavbarCamping/>
+    </>
   )
 }
 
