@@ -72,7 +72,6 @@ const Tickets = () => {
         </div>
       </div>
     </div>
-
     
     </div>
   )
