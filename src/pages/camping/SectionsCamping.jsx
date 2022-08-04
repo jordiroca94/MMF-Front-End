@@ -7,7 +7,7 @@ import RV from "../../assets/camping/rv.png"
 const sectionsCamping = () => {
   return (
     <div>
-        <div id='experience'>
+        <div id='camping'>
         <section className='h-full flex flex-col justify-center items-center '>
             <h1 className='text-4xl p-4'>BRING YOUR OWN TENT</h1>
             <img className='w-4/6' src={CAMPING} alt="camping"></img>
