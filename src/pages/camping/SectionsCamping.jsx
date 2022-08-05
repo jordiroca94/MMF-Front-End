@@ -7,13 +7,11 @@ import RV from "../../assets/camping/rv.png"
 const sectionsCamping = () => {
   return (
     <div>
-        <div id='camping'>
-        <section className='h-full flex flex-col justify-center items-center '>
+        <section id='camping' className='h-full flex flex-col justify-center items-center '>
             <h1 className='text-4xl p-4'>BRING YOUR OWN TENT</h1>
             <img className='w-4/6' src={CAMPING} alt="camping"></img>
             <p className='p-3 text-xl w-4/6'>The Forest Glow Camp MMF experience comes back to Barcelona! Camping included with MMF Full Pass  </p>
         </section>
-        </div>
         <section id="glamping" className='h-full flex flex-col justify-center items-center'> 
             <h1 className='text-4xl p-4'>USE OUR CHARMING TENTS</h1>
             <img className='w-4/6' src={GLAMPING} alt="glamping"></img>
@@ -21,7 +19,6 @@ const sectionsCamping = () => {
             <br></br>
             <p className='text-lg'>Rest like a king so you can give your all at the concerts!</p>
             <h3 className='text-lg'>For further information: <a className='email__link' href="mailto:glamping@mymusicfestival.com" target="_blank" rel='noreferrer'>glamping@mymusicfestival.com</a></h3>
-
         </section>
         <section id="rv" className='h-full flex flex-col justify-center items-center pb-8'>
             <h1 className='text-4xl p-4'>BRING YOUR HOME ON WHEELS</h1>

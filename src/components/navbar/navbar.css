@@ -19,7 +19,7 @@ header img{
 }
 
 nav a {
-    margin:0 1.5rem; 
+    margin-right:1.5rem; 
     color:white;
     text-decoration:none;
     transition: var(--transition);
