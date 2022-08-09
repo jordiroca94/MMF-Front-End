@@ -26,9 +26,9 @@ const Experience = () => {
             <p className='text-white text-xl'>Because My Music Festival means freedom, happiness and a guaranteed party. And this year MMF means dancing, jumping, enjoying, sharing and caring.</p>
             <p className='text-white text-xl pt-6'>Originally from Dutch lands now is time to move MMF to one of the most international European cities</p>
             <div className='flex justify-center p-10'>
-                <iframe width="900" height="500" src="https://www.youtube.com/embed/28sAg7-yBTg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="900" height="500" src="https://www.youtube.com/embed/28sAg7-yBTg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
-            <p className='flex justify-center text-white text-xl pt-6'>Do not miss it and become part of our next Aftermovie</p>
+            <p className='flex justify-center text-white text-xl pt-6'>Do not miss it and become part of our next aftermovie</p>
         </div>
 
     </div>
