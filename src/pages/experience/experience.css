@@ -1,0 +1,26 @@
+.experience__container{
+    width:100%; 
+    display:flex;
+    flex-direction:column;
+}
+
+.experience__container img{
+    height:55vh;
+    width:100%;
+}
+
+.border__line{
+    border-bottom: 1px solid white;
+}
+
+.ticket__button {
+    border: 1px solid white;
+}
+
+.ticket__button:hover{
+    background: transparent; 
+    color:red;
+    color:red;
+    border:1px solid red;
+}
+

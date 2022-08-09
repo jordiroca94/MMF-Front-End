@@ -1,8 +1,11 @@
 import React from 'react'
+import Welcome from './Welcome.jsx'
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <>
+      <Welcome/>
+    </>
   )
 }
 
