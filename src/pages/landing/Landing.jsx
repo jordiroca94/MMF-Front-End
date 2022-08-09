@@ -5,14 +5,14 @@ import Header from '../../components/header/Header'
 import Intro from '../../components/intro/Intro'
 import Sponsors from '../../components/sponsors/Sponsors'
 import Topbar from '../../components/topbar/Topbar'
-import Wristband from '../../components/wristband/Wristband'
+import WristbandLanding from '../../components/wristband/WristbandLanding'
 
 const Landing = () => {
   return (
     <>
       <Topbar/>
       <Header/>
-      <Wristband/>
+      <WristbandLanding/>
       <Concerts/>
       <Intro/>
       <Sponsors/>

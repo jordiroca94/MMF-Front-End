@@ -9,6 +9,15 @@
     border: 1px solid;
 }
 
+.buy-button:hover{
+    background: transparent; 
+    color:red;
+    color:red;
+    border:1px solid red;
+
+}
+
+
 @media screen and ( max-width:1024px){
     .resp__tickets{
         display: flex !important;

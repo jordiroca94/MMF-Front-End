@@ -65,7 +65,7 @@ const Concerts = () => {
     <div className='concerts__header__wrapper'>
       <h1>CONCERTS MMF </h1>
       <p>All those artists you have been waiting for </p>
-      <a href="#">ALL ARTISTS</a>
+      <a href='/lineup'>ALL ARTISTS</a>
 
     </div>
     </div>
