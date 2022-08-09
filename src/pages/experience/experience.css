@@ -24,3 +24,16 @@
     border:1px solid red;
 }
 
+@media screen and ( max-width:600px){
+    .experience__container img{
+        height:30vh;
+        width:100%;
+    }
+   .experience__resp{
+    padding-left:2rem !important;
+    padding-right:2rem !important;
+   }
+}
+
+
+
