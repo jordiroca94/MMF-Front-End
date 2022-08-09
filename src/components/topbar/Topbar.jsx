@@ -5,7 +5,7 @@ const Topbar = () => {
   return (
     <div className='topbar__container'>
         <div>MY MUSIC FESTIVAL</div>
-        <div className="topbar__date">6-11.SEP.2022. FORUM. BARCELONA</div>
+        <div className="topbar__date">8-10.SEP.2022. FORUM. BARCELONA</div>
     </div>
   )
 }

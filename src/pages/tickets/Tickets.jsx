@@ -12,7 +12,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for One Day 
             </p>
-            <p className="text-white"> 60€ + EXPENSES</p>
+            <p className="text-white"> 70€ + EXPENSES</p>
         </div>
         <div className="px-6 pt-4 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
@@ -39,7 +39,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for all the festival 
             </p>
-            <p className="text-white"> 280€ + EXPENSES</p>
+            <p className="text-white"> 180€ + EXPENSES</p>
         </div>
         <div className="px-6 pt-4 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
@@ -51,7 +51,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Includes preferential and fast lane access, welcome drink, access to Premium areas with bar and catering service.
             </p>
-            <p className="text-white"> 540€ + EXPENSES</p>
+            <p className="text-white"> 360€ + EXPENSES</p>
         </div>
         <div className="px-6 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>

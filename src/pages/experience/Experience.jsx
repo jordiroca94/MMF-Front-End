@@ -9,7 +9,7 @@ const Experience = () => {
         <img src={IMG1} alt="my-music-festival"/>
         <div className='experience__resp w-screen bg-black flex flex-col px-20'>
             <h1 className='text-white p-24 flex justify-center text-5xl '>WELCOME TO MY MUSIC FESTIVAL </h1>
-            <p className='text-white text-xl'>My Music Festival will be held on September 6,7,8,9,10 and 11 of 2022 at Parc del Fòrum in Barcelona. An emblematic city and an unbeatable setting:outdoors, facing the sea </p>
+            <p className='text-white text-xl'>My Music Festival will be held on September 8,9 and 10 of 2022 at Parc del Fòrum in Barcelona. An emblematic city and an unbeatable setting:outdoors, facing the sea </p>
             <br></br>
             <p className='text-white text-xl'>This is an unrepeatable experience. Based on music and accompanied by arts and commedy shows</p>
             <br></br>
