@@ -13,11 +13,11 @@ const Footer = () => {
   return (
     <footer className='footer__container'>
         <div className='footer__socials'>
-            <a href="https://www.instagram.com/tomorrowland/" target="_blank" rel="noreferrer"><SiInstagram/></a>
-            <a href="https://www.facebook.com/tomorrowland/" target="_blank" rel="noreferrer"><FaFacebookSquare/></a>
-            <a href="https://twitter.com/tomorrowland" target="_blank" rel="noreferrer"><TbBrandTwitter/></a>
-            <a href="https://www.youtube.com/c/tomorrowland" target="_blank" rel="noreferrer"><SiYoutube/></a>
-            <a href="https://open.spotify.com/playlist/5ZgnTlYPLATJiTg9yTgppb" target="_blank" rel="noreferrer"><SiSpotify/></a>
+            <a href="https://www.instagram.com/ohmymusicfest" target="_blank" rel="noreferrer"><SiInstagram/></a>
+            <a href="https://www.facebook.com/ohmymusicfestival/" target="_blank" rel="noreferrer"><FaFacebookSquare/></a>
+            <a href="https://twitter.com/ohmymusicfest" target="_blank" rel="noreferrer"><TbBrandTwitter/></a>
+            <a href="https://www.youtube.com/watch?v=28sAg7-yBTg&t=6s" target="_blank" rel="noreferrer"><SiYoutube/></a>
+            <a href="https://open.spotify.com/playlist/1OxYkJ6HGnKyKbgopVJaeK" target="_blank" rel="noreferrer"><SiSpotify/></a>
         </div>
         <div className='scroll__up__wrapper'>
         <a className='scroll__up' href="#"><BsArrowUpShort/></a>
