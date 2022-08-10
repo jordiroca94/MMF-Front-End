@@ -29,6 +29,12 @@
     width:8rem;
 }
 
+.wristband__info a:hover{
+    background: transparent; 
+    color:red;
+    border:1px solid red;
+}
+
 @media screen and ( max-width:700px){
    .wristband__container{
     flex-direction:column;

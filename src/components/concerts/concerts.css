@@ -24,6 +24,13 @@
     width:8rem;
 }
 
+.concerts__header a:hover{
+    background: transparent; 
+    color:red;
+    border:1px solid red;
+}
+
+
 /* SLIDER */
 
 .concerts__container{
