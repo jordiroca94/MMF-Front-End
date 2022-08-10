@@ -21,13 +21,25 @@
         padding:0px !important;
     }
     .lineup__container{
-        height:110vh 
+        height:85vh 
+    }
+    .resp__day{
+        font-size:1rem !important;
+        line-height:0.75rem !important;
+    }
+    .resp__title{
+        font-size:2rem !important;
+        line-height:1rem !important;
+        padding:2rem !important;
+    }
+    .resp__day{
+        font-size:2rem !important;
+        font-weight:900;
     }
 }
 
 @media screen and ( max-width:550px){
-
     .lineup__container{
-        height:160vh 
+        height:125vh 
     }
 }

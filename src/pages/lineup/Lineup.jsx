@@ -33,12 +33,12 @@ const Lineup = () => {
   return (
     <>
       <div className='lineup__container '>
-        <h1 className='text-white px-24 pt-24 flex justify-center text-5xl '>LINEUP 2022 </h1>
+        <h1 className='resp__title text-white px-24 pt-24 flex justify-center text-5xl '>LINEUP 2022 </h1>
         {
           lineupData.map(({id,day,mainArtists,secondArtists,otherArtists,otherArtists2})=>{
             return(
           <div key={id} className='resp__lineup flex flex-row justify-center gap-7 p-10'>
-            <h3 className='flex items-center px-6 py-4 text-white text-5xl'>{day}</h3>
+            <h3 className='resp__day flex items-center px-6 py-4 text-white text-5xl'>{day}</h3>
             <div className='px-6 py-4 text-white'>
               <p className='text-4xl font-extrabold'>{mainArtists}</p>
               <p className='text-2xl font-extrabold'>{secondArtists}</p>
