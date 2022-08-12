@@ -19,7 +19,7 @@ header img{
 }
 
 nav a {
-    margin-right:1.5rem; 
+    margin-right:2rem; 
     color:white;
     text-decoration:none;
     transition: var(--transition);
@@ -47,7 +47,7 @@ nav a.active{
     font-size:1.8rem;
 } 
 
-@media screen and ( max-width:865px){
+@media screen and ( max-width:920px){
     .nav-btn{
         visibility:visible; 
         opacity:1;

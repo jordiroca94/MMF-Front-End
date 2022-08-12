@@ -21,6 +21,7 @@ const Navbar = () => {
     <nav ref={navRef}>
         <a href='/tickets' className={activeTab === "tickets" ? "active" : ""}>TICKETS</a>
         <a href='/camping' className={activeTab === "camping" ? "active" : ""}>CAMPING</a>
+        <a href='/wristband' className={activeTab === "wristband" ? "active" : ""}>WRISTBAND</a>
         <a href='/experience' className={activeTab === "experience" ? "active" : ""}>EXPERIENCE</a>
         <a href='/lineup' className={activeTab === "lineup" ? "active" : ""}>LINEUP </a>
         <a href='/usefulinfo' className={activeTab === "usefulinfo" ? "active" : ""}>USEFUL INFO</a>
