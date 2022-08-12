@@ -2,7 +2,7 @@
     background-image: url(/src/assets/background5.jpg);
     background-size:cover; 
     background-repeat:no-repeat;
-    height:100vh
+    height:100%;
 }
 
 .buy-button {
@@ -24,17 +24,11 @@
         flex-direction: column !important;
         align-items: center !important;
     }
-    .tickets__container{
-        height:145vh;
-    }
 }
 
 @media screen and ( max-width:600px){
     .resp__text__card {
         max-width:240px !important; 
         max-height:350px !important;
-    }
-    .tickets__container{
-        height:180vh;
     }
 }
