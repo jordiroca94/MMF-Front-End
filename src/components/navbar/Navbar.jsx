@@ -24,7 +24,6 @@ const Navbar = () => {
         <a href='/wristband' className={activeTab === "wristband" ? "active" : ""}>WRISTBAND</a>
         <a href='/experience' className={activeTab === "experience" ? "active" : ""}>EXPERIENCE</a>
         <a href='/lineup' className={activeTab === "lineup" ? "active" : ""}>LINEUP </a>
-        <a href='/usefulinfo' className={activeTab === "usefulinfo" ? "active" : ""}>USEFUL INFO</a>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes/>
         </button>

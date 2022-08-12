@@ -47,7 +47,7 @@ nav a.active{
     font-size:1.8rem;
 } 
 
-@media screen and ( max-width:920px){
+@media screen and ( max-width:860px){
     .nav-btn{
         visibility:visible; 
         opacity:1;

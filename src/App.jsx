@@ -24,7 +24,6 @@ const App = () => {
           <Route exact path="/camping" element={<Camping/>} />
           <Route exact path="/experience" element={<Experience/>} />
           <Route exact path="/lineup" element={<Lineup/>} />
-          <Route exact path="/usefulinfo" element={<UsefulInfo/>} />
         </Routes>
         <Footer/>
     </>
