@@ -1,0 +1,8 @@
+@media screen and ( max-width:600px){
+    .resp__wristband__container h1 {
+        font-size:1.7rem !important; 
+    }
+    .resp__wristband__container h2 {
+        font-size:1.1rem !important; 
+    }
+}
