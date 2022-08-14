@@ -14,9 +14,7 @@
     color:red;
     color:red;
     border:1px solid red;
-
 }
-
 
 @media screen and ( max-width:1024px){
     .resp__tickets{

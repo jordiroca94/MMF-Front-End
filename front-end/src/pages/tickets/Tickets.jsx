@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import StripeCheckout from "react-stripe-checkout"
 import "./tickets.css"
 import axios from "axios";
@@ -31,7 +31,7 @@ function displayToast() {
  
 const Tickets = () => {
 
-  const [product] = React.useState({
+  const [product] = useState({
     name: "One day Pass",
     price: 70,
     description: "awesome festival"
@@ -44,7 +44,7 @@ const Tickets = () => {
 
     const {status} = response.data 
     if(status ==="success"){
-      toast("Success! Check your email for details",
+      toast("Purchase done Successfully!",
       {type:"success"})
     }else{
       toast("Something went wrong",{
@@ -63,33 +63,43 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for One Day 
             </p>
-            <p className="text-white"> 70€</p>
+            <p className="text-white"> 70 €</p>
         </div>
         <div className="px-6 pt-4 pb-2">
           <StripeCheckout onClick={displayToast}
+            label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
             billingAddress
             shippingAddress
             currency = "EUR"
-            amount = {product.price*100}
-            name = {"ONE DAY PASS"}
+            amount = {70*100}
+            name = {"ONE DAY TICKET"}
             receipt_email
           />
-          {/* <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button> */}
         </div>
       </div>
       <div className="resp__text__card max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
         <div className="px-6 py-4">
-          <div className="font-bold text-2xl mb-2 text-white">ONE DAY TICKET PREMIUM</div>
+          <div className="font-bold text-2xl mb-2 text-white">ONE DAY PREMIUM TICKET</div>
             <p className="text-white text-base mb-2">
             Includes preferential and fast lane access, welcome drink, access to Premium areas with bar and catering service.
             </p>
-            <p className="text-white"> 130€</p>
+            <p className="text-white"> 130 €</p>
         </div>
         <div className="px-6 pb-2">
-          <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
-        </div>
+        <StripeCheckout onClick={displayToast}
+            label="BUY TICKET"
+            stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
+            token ={handleToken}
+            billingAddress
+            shippingAddress
+            currency = "EUR"
+            amount = {130*100}
+            name = {"ONE DAY PREMIUM TICKET"}
+            receipt_email
+          />        
+          </div>
       </div>
     </div>
 
@@ -100,22 +110,42 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for all the festival 
             </p>
-            <p className="text-white"> 180€</p>
+            <p className="text-white"> 180 €</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
+        <StripeCheckout onClick={displayToast}
+            label="BUY TICKET"
+            stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
+            token ={handleToken}
+            billingAddress
+            shippingAddress
+            currency = "EUR"
+            amount = {180*100}
+            name = {"FULL TICKET"}
+            receipt_email
+          />  
         </div>
       </div>
       <div className="resp__text__card max-w-lg rounded-lg max-h-64 overflow-hidden shadow-lg bg-neutral-600/75  ">
         <div className="px-6 py-4">
-          <div className="font-bold text-2xl mb-2 text-white">FULL TICKET PREMIUM</div>
+          <div className="font-bold text-2xl mb-2 text-white">FULL PREMIUM TICKET</div>
             <p className="text-white text-base mb-2">
             Includes preferential and fast lane access, welcome drink, access to Premium areas with bar and catering service.
             </p>
-            <p className="text-white"> 360€</p>
+            <p className="text-white"> 360 €</p>
         </div>
         <div className="px-6 pb-2">
-          <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
+        <StripeCheckout onClick={displayToast}
+            label="BUY TICKET"
+            stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
+            token ={handleToken}
+            billingAddress
+            shippingAddress
+            currency = "EUR"
+            amount = {360*100}
+            name = {"FULL TICKET PREMIUM"}
+            receipt_email
+          /> 
         </div>
       </div>
     </div>
