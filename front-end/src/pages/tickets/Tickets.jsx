@@ -3,6 +3,31 @@ import StripeCheckout from "react-stripe-checkout"
 import "./tickets.css"
 import axios from "axios";
 import {ToastContainer,toast} from 'react-toastify'
+import "react-toastify/dist/ReactToastify.min.css";
+import { css } from "glamor";
+
+
+let toastId = null;
+
+function displayToast() {
+  if (!toast.isActive(toastId)) {
+    console.log("Displaying Toast");
+    toastId = toast("Hello!", {
+      className: css({
+        background: "#00FF00 !important",
+        color: "white !important",
+        fontWeight: "bold"
+      }),
+      closeOnClick: false,
+      toastId: "my_toast",
+      autoClose: true,
+      closeButton: false,
+      position: toast.POSITION.BOTTOM_CENTER
+    });
+  } else {
+    console.log("Toast already active");
+  }
+}
  
 const Tickets = () => {
 
@@ -30,11 +55,7 @@ const Tickets = () => {
 
   return (
     <div className="tickets__container flex items-center flex-col">
-    <ToastContainer
-    autoClose={5000}
-    hideProgressBar={true}
-    />
-
+    <ToastContainer position="top-right"/>
     <div className='resp__tickets flex flex-row gap-14 p-10'>
       <div className="w-60 max-w-xs rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
         <div className="px-6 py-4">
@@ -42,16 +63,18 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for One Day 
             </p>
-            <p className="text-white"> 70€ + EXPENSES</p>
+            <p className="text-white"> 70€</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <StripeCheckout
+          <StripeCheckout onClick={displayToast}
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
             billingAddress
             shippingAddress
+            currency = "EUR"
             amount = {product.price*100}
             name = {"ONE DAY PASS"}
+            receipt_email
           />
           {/* <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button> */}
         </div>
@@ -62,7 +85,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Includes preferential and fast lane access, welcome drink, access to Premium areas with bar and catering service.
             </p>
-            <p className="text-white"> 130€ + EXPENSES</p>
+            <p className="text-white"> 130€</p>
         </div>
         <div className="px-6 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
@@ -77,7 +100,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Ticked valid for all the festival 
             </p>
-            <p className="text-white"> 180€ + EXPENSES</p>
+            <p className="text-white"> 180€</p>
         </div>
         <div className="px-6 pt-4 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
@@ -89,7 +112,7 @@ const Tickets = () => {
             <p className="text-white text-base mb-2">
             Includes preferential and fast lane access, welcome drink, access to Premium areas with bar and catering service.
             </p>
-            <p className="text-white"> 360€ + EXPENSES</p>
+            <p className="text-white"> 360€</p>
         </div>
         <div className="px-6 pb-2">
           <button className="buy-button inline-block px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 border-2 border-white">BUY TICKET </button>
