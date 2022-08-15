@@ -32,9 +32,8 @@ function displayToast() {
 const Tickets = () => {
 
   const [product] = useState({
-    name: "One day Pass",
+    name: "ONE DAY TICKET",
     price: 70,
-    description: "awesome festival"
   });
 
   async function handleToken(token){
@@ -59,22 +58,22 @@ const Tickets = () => {
     <div className='resp__tickets flex flex-row gap-14 p-10'>
       <div className="w-60 max-w-xs rounded-lg overflow-hidden shadow-lg bg-neutral-600/75  h-58 ">
         <div className="px-6 py-4">
-          <div className="font-bold text-2xl mb-2 text-white">ONE DAY PASS</div>
+          <div className="font-bold text-2xl mb-2 text-white">ONE DAY TICKET</div>
             <p className="text-white text-base mb-2">
             Ticked valid for One Day 
             </p>
             <p className="text-white"> 70 €</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <StripeCheckout onClick={displayToast}
+          <StripeCheckout onClick={displayToast()}
             label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
             billingAddress
             shippingAddress
             currency = "EUR"
-            amount = {70*100}
-            name = {"ONE DAY TICKET"}
+            amount = {product.price *100}
+            name = {product.name}
             receipt_email
           />
         </div>
