@@ -19,7 +19,9 @@ const Wristband = () => {
         <section className='bg-black flex flex-col justify-center items-center'>
           <h2 className='text-red-700 text-3xl font-extrabold p-8'>ABOUT THE REFUND OF THE REMAINING AMOUNT ON THE WRISTBAND</h2>
           <p className='text-white w-5/6 text-lg p-4'>If you created your personal account and always topped up online, you should know that the amount remaining on your wristband has already been refunded to you automatically and commission-free. If the remaining amount is less than 3€, it will be been donated to Open Arms. </p>
+          <a href="https://www.openarms.es/es" rel='stylesheet'>
           <img className='w-60 h-60 p-8' src={OPENARMS} alt="open Arms"></img>
+          </a>
         </section>
       </div>
     </>
