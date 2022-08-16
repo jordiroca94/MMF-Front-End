@@ -4,30 +4,9 @@ import "./tickets.css"
 import axios from "axios";
 import {ToastContainer,toast} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.min.css";
-import { css } from "glamor";
 
 
-let toastId = null;
 
-function displayToast() {
-  if (!toast.isActive(toastId)) {
-    console.log("Displaying Toast");
-    toastId = toast("Hello!", {
-      className: css({
-        background: "#00FF00 !important",
-        color: "white !important",
-        fontWeight: "bold"
-      }),
-      closeOnClick: false,
-      toastId: "my_toast",
-      autoClose: true,
-      closeButton: false,
-      position: toast.POSITION.BOTTOM_CENTER
-    });
-  } else {
-    console.log("Toast already active");
-  }
-}
  
 const Tickets = () => {
 
@@ -65,7 +44,7 @@ const Tickets = () => {
             <p className="text-white"> 70 €</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <StripeCheckout onClick={displayToast()}
+          <StripeCheckout 
             label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
@@ -87,7 +66,7 @@ const Tickets = () => {
             <p className="text-white"> 130 €</p>
         </div>
         <div className="px-6 pb-2">
-        <StripeCheckout onClick={displayToast}
+        <StripeCheckout 
             label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
@@ -112,7 +91,7 @@ const Tickets = () => {
             <p className="text-white"> 180 €</p>
         </div>
         <div className="px-6 pt-4 pb-2">
-        <StripeCheckout onClick={displayToast}
+        <StripeCheckout 
             label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
@@ -134,7 +113,7 @@ const Tickets = () => {
             <p className="text-white"> 360 €</p>
         </div>
         <div className="px-6 pb-2">
-        <StripeCheckout onClick={displayToast}
+        <StripeCheckout 
             label="BUY TICKET"
             stripeKey= "pk_test_51KE9D2Assk6U42WqdezWGxbrr03JFHA6uLUcrG0qj5biX0vDGKaInagINHkBnJ5r4DbEmhHkRcUvmGDYPVu4kRRk00ieMr5UnK"
             token ={handleToken}
